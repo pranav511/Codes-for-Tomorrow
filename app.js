@@ -13,11 +13,11 @@ app.use('/api',categoryRoutes);
 app.use('/api',serviceRoutes);
 
 app.get('/',(req,res)=>{
-    res.send('demo check');
+    res.send('routes    working');
 })
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT,()=>{
-    console.log(`server is live at PORT ${PORT}`);
+app.listen(PORT,()=>{       
+    console.log(`server is live at PORT ${PORT} http://localhost:${PORT}`);
 })
